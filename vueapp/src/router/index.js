@@ -1,14 +1,16 @@
-import { createRouter, createWebHistory, RouteRecordRaw } from 'vue-router'
+import { createRouter, createWebHistory } from 'vue-router'
 import AuthView from '../views/AuthView.vue'
 import DashBoardView from '../views/DashBoardView.vue'
 import ExpansesView from "@/views/ExpansesView.vue";
-//import TestView from "@/views/TestView.vue";
-const routes: Array<RouteRecordRaw> = [
+import TestView from "@/views/TestView.vue";
+
+const routes = [
   {    path: '/auth', name: 'home',component: AuthView  },
   {    path: '/expenses', name: 'expenses',component: ExpansesView  },
-  {    path: '/', name: 'dashboard',component: DashBoardView  },
-  // {    path: '/', name: 'dashboard',component: TestView  },
+  //{    path: '/', name: 'dashboard',component: DashBoardView  },
+  {    path: '/', name: 'dashboard',component: TestView  },
 
+  
   {
     path: '/about',
     name: 'about',
